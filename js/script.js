@@ -115,6 +115,16 @@
     });
   });
 
+  /* ---------- timeline detail toggle ---------- */
+  document.querySelectorAll(".detail-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      const wrap = document.getElementById(btn.getAttribute("aria-controls"));
+      btn.setAttribute("aria-expanded", String(!expanded));
+      if (wrap) wrap.classList.toggle("open", !expanded);
+    });
+  });
+
   /* ---------- scroll reveal ---------- */
   const revealEls = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
