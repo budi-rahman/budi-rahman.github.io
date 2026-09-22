@@ -304,29 +304,6 @@ html[data-lang="id"] .lang-en { display: none !important; }
   margin-bottom: 56px;
 }
 
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 760px;
-  padding-top: 30px;
-  border-top: 1px solid var(--border-soft);
-}
-.stat { display: flex; flex-direction: column; }
-.stat-num, .stat-suffix {
-  font-family: var(--font-mono);
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: var(--text);
-  display: inline;
-}
-.stat-suffix { color: var(--accent); }
-.stat-label {
-  font-size: 0.78rem;
-  color: var(--text-faint);
-  margin-top: 4px;
-}
-
 .scroll-cue {
   position: absolute;
   bottom: 28px;
@@ -630,7 +607,6 @@ a.contact-card:hover {
   .skills-grid { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
-  .hero-stats { grid-template-columns: repeat(2, 1fr); row-gap: 26px; }
 }
 
 @media (max-width: 760px) {
